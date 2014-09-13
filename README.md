@@ -1,4 +1,5 @@
-buckie.github.io
-================
+# README
 
-Will Martino's gh-pages
+# Inspired By
+
+https://github.com/sloria/flask-ghpages-example
