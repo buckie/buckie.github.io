@@ -1,29 +1,37 @@
 <!doctype html>
+<html>
 <head>
   <meta charset="utf-8">
   <title>{% block page_title %}Your Site{% endblock %}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/picnic.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontello.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
   {% block css %}{% endblock %}
 
+
 </head>
-<body class="box">
+<body class="main-body-block">
 
-<nav class="nav-menu">
-    <ul>
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="{{ url_for('resume')}}">Resume</a></li>
-        <li><a href="https://github.com/buckie/buckie.github.io">Source</a></li>
-        <li><a href="https://github.com/buckie">Github Profile</a></li>
-    </ul>
-</nav>
 
-<div class="{% block content_class %}container{% endblock content_class %}">
+    <nav>
+      <a href="{{ url_for('home') }}" class="main icon-home">Home</a>
 
-  <div class="content" role="main">
+      <!-- responsive -->
+      <input id="bmenu" class="burgercheck" type="checkbox">
+      <label for="bmenu" class="burgermenu"></label>
+      <!-- /responsive -->
+
+      <div class="menu">
+        <a href="{{ url_for('resume') }}" class="icon-doc-text">Resume</a>
+        <a href="https://github.com/buckie" class="icon-github">Github Profile</a>
+        <a class="button primary" href="https://github.com/buckie/buckie.github.io">
+            Source
+        </a>
+      </div>
+    </nav>
+
     {% block content %}{% endblock %}
-  </div>
 
-</div><!-- end container -->
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
