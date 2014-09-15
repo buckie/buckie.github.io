@@ -7,7 +7,7 @@ safe() { "$@" || barf "cannot $*"; }
 
 if [ -r "./freeze.py" ]; then
     echo 'Begining Freezing Process'
-    safe python ./freeze.py 
+    safe python freeze.py 
 else
     barf 'freeze.py is missing!'
 fi
@@ -19,7 +19,7 @@ if [ -d "./build" ]; then
     safe git commit -sm "updated frozen files"
     
     echo 'begining push to github'
-    safe git subtree push --prefix ./build origin master 
+    safe git subtree push --prefix build origin master 
 else
     barf 'Deploy failure, ./build does not exist'
 fi
