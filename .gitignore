@@ -5,7 +5,7 @@ _site/
 *.pyo
 env
 env*
-dist
+dist/
 *.egg
 *.egg-info
 _mailinglist
