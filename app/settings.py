@@ -13,11 +13,11 @@ def parent_dir(path):
     '''Return the parent of a directory.'''
     return os.path.abspath(os.path.join(path, os.pardir))
 
-PROJECT_ROOT = os.path.join(APP_DIR, 'build')
-FREEZER_DESTINATION = PROJECT_ROOT
+PROJECT_ROOT = os.path.join(APP_DIR)
+FREEZER_DESTINATION = os.path.join(os.path.dirname(PROJECT_ROOT), 'build')
 FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 FREEZER_REMOVE_EXTRA_FILES = True  # IMPORTANT: If this is True, all app files
-                                    # will be deleted when you run the freezer
+                                # will be deleted when you run the freezer
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
 FLATPAGES_ROOT = os.path.join(APP_DIR, 'pages')
 FLATPAGES_EXTENSION = '.md'
