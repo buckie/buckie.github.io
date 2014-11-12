@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>buckie's gh-page</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/picnic.min.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/fontello.css">
-  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/fontello.css">
   <link rel="stylesheet" type="text/css" media="screen, projection"
         href="/static/css/screen.css" />
   <link rel="stylesheet" type="text/css" media="screen, projection" 
@@ -20,72 +18,69 @@
 </head>
 <body class="main-body-block">
 
-
-    <nav>
-      <a href="/" class="main icon-home">Home</a>
-
-      <!-- responsive -->
-      <input id="bmenu" class="burgercheck" type="checkbox">
-      <label for="bmenu" class="burgermenu"></label>
-      <!-- /responsive -->
-
-      <div class="menu">
-        <a href="/static/resume/cv.html" class="icon-doc-text">Resume</a>
-        <a href="https://github.com/buckie" class="icon-github">Github Profile</a>
-        <a class="button primary" href="https://github.com/buckie/buckie.github.io">
-            Source
-        </a>
+    <div class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WM</a>
       </div>
-    </nav>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/" class="main icon-home">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                    
+                        <li><a href="/making_ghpages/">
+                                Flask &amp; gh-pages
+                            </a>
+                        </li>
+                    
+            </ul>
+          </li>
+        </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a href="/static/resume/cv.html" class="icon-doc-text">Resume</a>
+              </li>
+              <li>
+                  <a href="https://github.com/buckie" class="icon-github-octocat">Github Profile</a>
+              </li>
+              <li>
+                  <a href="https://github.com/buckie/buckie.github.io">
+                      Source
+                  </a>
+              </li>
+          </ul>
+
+
+
+      </div>
+    </div>
 
     
 
-<div class="row">
-
-    <div class="half index-description-text">
-        <h2 class="mk-text-centered">About Me</h2>
-        <p>
-            This page is still heavily under construction. It was mostly made to help out a friend I've been mentoring in development.
-             Eventually I'll put up some posts about my haskell based CSV cleaner and my work on a Wavelet based 1-D clustering method
-            and its applications to financial time series. But for now, my resume will have to do. FYI... pandoc rocks at making resumes!
-        </p>
-
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 ">
+      <p>
+        This page is still heavily under construction. It was mostly made to help out a friend I've been mentoring in development.
+         Eventually I'll put up some posts about my haskell based CSV cleaner and my work on a Wavelet based 1-D clustering method
+        and its applications to financial time series. But for now, my resume will have to do. FYI... pandoc rocks at making resumes!
+      </p>
     </div>
-
-    <div class="half index-links">
-        <table class="primary index-link-table">
-            <thead>
-                <tr>
-                    <th>Stuff I've worked on</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        <a href="/making_ghpages/">
-                            Flask &amp; gh-pages
-                        </a>
-                    </td>
-                    <td>
-                        2014-09-14
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-
-
-
-
-    </div>
-
+  </div>
 </div>
 
 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="/static/js/script.js"></script>
 </body>
 </html>
