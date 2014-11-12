@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> 468d2236d8ab5dd7e0b136df4b8598cd31c314e8
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+<<<<<<< HEAD
 @import url("//fonts.googleapis.com/css?family=Roboto:300,400,500");
+=======
+>>>>>>> 468d2236d8ab5dd7e0b136df4b8598cd31c314e8
 /* line 5, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,6 +74,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+<<<<<<< HEAD
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_normalize.scss */
@@ -8569,3 +8576,5 @@ select.form-control {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
+=======
+>>>>>>> 468d2236d8ab5dd7e0b136df4b8598cd31c314e8

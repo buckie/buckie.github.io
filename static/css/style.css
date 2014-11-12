@@ -1,0 +1,21 @@
+body.main-body-block {
+      display: block;
+      font-size: 16px;
+      color: #333;
+      background: #FFF;
+      margin: 100px auto 500px;
+      width: 100%;
+    }
+
+div.index-links h2 {
+    text-align: center;
+}
+
+table.index-link-table {
+    width: 100%
+}
+
+.mk-text-centered {
+    text-align: center;
+}
+

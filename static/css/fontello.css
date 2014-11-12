@@ -51,7 +51,11 @@
 }
  
 .icon-home:before { content: '\e800'; } /* '' */
+<<<<<<< HEAD
 .icon-github-octocat:before { content: '\e801'; } /* '' */
+=======
+.icon-github:before { content: '\e801'; } /* '' */
+>>>>>>> 468d2236d8ab5dd7e0b136df4b8598cd31c314e8
 .icon-github-text:before { content: '\e802'; } /* '' */
 .icon-file-pdf:before { content: '\e803'; } /* '' */
 .icon-doc-text:before { content: '\e804'; } /* '' */
