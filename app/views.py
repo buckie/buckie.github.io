@@ -9,12 +9,6 @@ def home():
         key=lambda page: page.meta['date'])
     return render_template('index.html', pages=sorted_posts)
 
-
-@app.route('/resume.html')
-def resume():
-    return render_template('resume.html')
-
-
 @app.route('/<path:path>/')
 def page(path):
     # Path is the filename of a page, without the file extension

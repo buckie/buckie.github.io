@@ -1,48 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row">
-
-    <div class="half index-description-text">
-        <h2 class="mk-text-centered">About Me</h2>
-        <p>
-            This page is still heavily under construction. It was mostly made to help out a friend I've been mentoring in development.
-             Eventually I'll put up some posts about my haskell based CSV cleaner and my work on a Wavelet based 1-D clustering method
-            and its applications to financial time series. But for now, my resume will have to do. FYI... pandoc rocks at making resumes!
-        </p>
-
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 ">
+      <p>
+        This page is still heavily under construction. It was mostly made to help out a friend I've been mentoring in development.
+         Eventually I'll put up some posts about my haskell based CSV cleaner and my work on a Wavelet based 1-D clustering method
+        and its applications to financial time series. But for now, my resume will have to do. FYI... pandoc rocks at making resumes!
+      </p>
     </div>
-
-    <div class="half index-links">
-        <table class="primary index-link-table">
-            <thead>
-                <tr>
-                    <th>Stuff I've worked on</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-            {% for page in pages %}
-                <tr>
-                    <td>
-                        <a href="{{ url_for('page', path=page.path) }}">
-                            {{ page.meta.title }}
-                        </a>
-                    </td>
-                    <td>
-                        {{ page.meta.date }}
-                    </td>
-                </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-
-
-
-
-
-    </div>
-
+  </div>
 </div>
+
 {% endblock %}

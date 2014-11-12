@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>{{ page.meta.title }}</h1>
-<p>{{ page.meta.date }}</p>
-{{ page }}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 ">
+        <h1>{{ page.meta.title }}</h1>
+        <p>{{ page.meta.date }}</p>
+        {{ page }}
+    </div>
+  </div>
+</div>
 {% endblock %}
