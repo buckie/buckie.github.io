@@ -19,6 +19,7 @@ if [ -d "./build" ]; then
     safe git commit -sm "updated frozen files"
     
     echo 'begining push to github'
+    safe git push origin :master
     safe git subtree push --prefix build origin master 
 else
     barf 'Deploy failure, ./build does not exist'

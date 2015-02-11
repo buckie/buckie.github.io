@@ -6,7 +6,6 @@ Markdown==2.5
 MarkupSafe==0.23
 PyYAML==3.11
 Werkzeug==0.9.6
-disco==0.0.0
 itsdangerous==0.24
 subprocess32==3.2.6
 wsgiref==0.1.2
