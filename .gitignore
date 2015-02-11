@@ -1,13 +1,3 @@
-_site/
-.sass-cache/
-.DS_Store
-*.pyc
-*.pyo
-env
-env*
+node_modules/
 dist/
-*.egg
-*.egg-info
-_mailinglist
-.tox
-.idea/
+.sass-cache/
